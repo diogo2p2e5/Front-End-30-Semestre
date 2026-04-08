@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* bloco */
+.mamae {
+    width: 920px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border: 2px dashed salmon;
+}
+
+
+/*utilizando a metodologia ficaria
+    sessao-noticias__noticia 
+    bloco__elemento ou Mãe__Filho  */
+/* elemento */
+.mamae__filhinho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background-color: salmon;
+
+}
+
+.filhinho--azul {
+   
+    background-color: blue;
+
+}
+
+/* 
+se eu quissese mudar a cor de UM dos blocos eu faria
+
+noticia--azul ou filho--azul
+*/
