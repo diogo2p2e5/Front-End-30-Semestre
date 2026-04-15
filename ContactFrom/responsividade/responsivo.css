@@ -1,0 +1,45 @@
+*{
+/* Reset CSS  */
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Desktop first >= 992px */
+
+h1{
+    color: blueviolet;
+    
+}
+
+
+
+
+/* BreakPoints */
+
+/* Tablet < 992px (768px - 991px) */
+@media screen and (max-width: 991px) {
+    h1{
+        color: brown;
+    }
+    
+    img{
+        display: none;
+    }
+}
+
+
+
+
+/* Mobile < 768px (0px - 767px) */
+@media screen and (max-width: 767px) {
+    h1{
+        background-color: darkcyan;
+        color: chocolate;
+    }
+
+    img{
+        display: flex;
+    }
+}
