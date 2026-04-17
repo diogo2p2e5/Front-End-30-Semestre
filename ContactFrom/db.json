@@ -1,0 +1,82 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "contatos": [
+    {
+      "nome": "Roberto",
+      "sobrenome": "junior",
+      "email": "robertojunior@gmail.com",
+      "id": "sdz13JTGddI"
+    },
+    {
+      "nome": "junior",
+      "sobrenome": "lagos",
+      "email": "juniorlagos@gmail.com",
+      "id": "ZheLSJyidB0"
+    },
+    {
+      "nome": "Tim",
+      "sobrenome": "Maia",
+      "email": "sendfarall@gmail.com",
+      "id": "hZXK31JuJlg"
+    },
+    {
+      "nome": "Tom",
+      "sobrenome": "yorke",
+      "email": "butimacreep@gmail.com",
+      "id": "FvVXLaxG-yo"
+    },
+    {
+      "nome": "leon",
+      "sobrenome": "S Kennedy",
+      "email": "adawongmywife@gmail.com",
+      "id": "l7S8jm2tRzU"
+    },
+    {
+      "nome": "Mayra",
+      "sobrenome": "AP",
+      "email": "btsmylife@gmail.com",
+      "id": "oBWAk6B2zBg"
+    }
+  ],
+  "produtos": [
+    {
+      "produto": "The Sims",
+      "preco": "R$ 15,50",
+      "quantidade": "10",
+      "id": "i9Wz4YdmmFQ"
+    },
+    {
+      "produto": "Castlevania: Symphony of the Night",
+      "preco": "R$ 24,50",
+      "quantidade": "30",
+      "id": "yeLanJl3g2E"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
