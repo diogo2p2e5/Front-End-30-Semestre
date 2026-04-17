@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    
 </head>
 <body>
     <header class="header">
@@ -100,7 +101,8 @@
                                 name="cep" 
                                 id="cep" 
                                 placeholder="cep: 9999-999"
-                                type="text"
+                                type="number"
+                                onblur="buscarEndereco(this.value)"
                         >
 
                          <input class="contact-form__input contact-form__input--metade"
@@ -191,8 +193,8 @@
                      id="cadastrar"
                      name="cadastrar"
                      class="contact-form__button  contact-form__input--metade"
-                     onclick="minhaFuncao();"
-                     >cadastrar</button>
+                     onclick="validarFormulario();"
+                     >Cadastrar</button>
                     
                      <button 
                     type="reset"
@@ -213,129 +215,8 @@
 
         </div>
     </main>
-    <script>
-        function minhaFuncao(){
-            let nome = document.getElementById("nome").value.trim();
-            let sobrenome = document.getElementById("sobrenome").value.trim();
-            let email = document.getElementById("email").value.trim();
-            let pais = document.getElementById("pais").value.trim();
-            let DDD = document.getElementById("DDD").value.trim();
-            let numero = document.getElementById("numero").value.trim();
-            let cep = document.getElementById("cep").value.trim();
-            let rua = document.getElementById("rua").value.trim();
-            let CasaNumero = document.getElementById("CasaNumero").value.trim();
-            let apartamento = document.getElementById("apartamento").value.trim();
-            let Bairro = document.getElementById("Bairro").value.trim();
-            let Cidade = document.getElementById("Cidade").value.trim();
-            let Estado = document.getElementById("Estado").value.trim();
-
-            //valida o preenchimento do campo nome
-            if(nome.length == 0){//se estiver vazio ele pinta
-                formError("nome")
-            }else{//se não ele deixa normal
-                reiniciaBorder("nome")
-            }
-
-            if(sobrenome.length == 0){
-                formError("sobrenome")
-            }else{//se não ele deixa normal
-                reiniciaBorder("sobrenome")
-            }
-
-        
-             if(email.length == 0){
-                formError("email")
-            }else{//se não ele deixa normal
-                reiniciaBorder("email")
-            }
-
-            // ///////////////////////////////////////////////////////////////////////////////////////
-
-             if(pais.length == 0){
-                formError("pais")
-            }else{//se não ele deixa normal
-                reiniciaBorder("pais")
-            }
-
-             if(DDD.length == 0){
-                formError("DDD")
-            }else{//se não ele deixa normal
-                reiniciaBorder("DDD")
-            }
-
-             if(numero.length == 0){
-                formError("numero")
-            }else{//se não ele deixa normal
-                reiniciaBorder("numero")
-            }
-
-            // /////////////////////////////////////////////////////////////////////////////////////////
-
-             if(cep.length == 0){
-                formError("cep")
-            }else{//se não ele deixa normal
-                reiniciaBorder("cep")
-            }
-
-             if(rua.length == 0){
-                formError("rua")
-            }else{//se não ele deixa normal
-                reiniciaBorder("rua")
-            }
-
-              if(CasaNumero.length == 0){
-                formError("CasaNumero")
-            }else{//se não ele deixa normal
-                reiniciaBorder("CasaNumero")
-            }
-
-              if(apartamento.length == 0){
-                formError("apartamento")
-            }else{//se não ele deixa normal
-                reiniciaBorder("apartamento")
-            }
-
-              if(rua.length == 0){
-                formError("rua")
-            }else{//se não ele deixa normal
-                reiniciaBorder("rua")
-            }
-
-              if(Bairro.length == 0){
-                formError("Bairro")
-            }else{//se não ele deixa normal
-                reiniciaBorder("Bairro")
-            }
-
-              if(Cidade.length == 0){
-                formError("Cidade")
-            }else{//se não ele deixa normal
-                reiniciaBorder("Cidade")
-            }
-
-              if(Estado.length == 0){
-                formError("Estado")
-            }else{//se não ele deixa normal
-                reiniciaBorder("Estado")
-            }
-
-
-            // literal template: é a crase ``
-            // console.log(`Nome: ${nome} ${sobrenome} Email: ${email}`);
-        }
-
-        //função que pinta a borda do campo que precissa preencher
-        function formError(fildId){
-
-            document.getElementById(fildId).style.border = "1px solid red";
-        }
-
-        function reiniciaBorder(fildId){
-            document.getElementById(fildId).style.border = "none";
-        }
-
-
-    </script>
+  
+    <script src="./js/script.js"></script>
 
 
 
