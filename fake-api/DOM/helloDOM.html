@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        alert(`Título: ${document.getElementById("titulo").textContent}`)
+
+        //JavaScript é uma linguagem Case Sensitive
+        //por convenção utilizamos o padrão Camel Case
+        // - Maiúscula a apartir da segunda palavra
+        function saudacao(){
+            alert("Hello World")
+        }
+        function saudacaoLegal(){
+            alert("olá amigo")
+        }
+        function mouseClicadoDuasVezes(){
+            alert("pipipi popopo pupupu não sei oque, não sei oque la")
+        }
+    </script>
+</head>
+<body>
+    <h1 id="titulo">Bem Vindo</h1>
+    <p>Hello DOM JS</p>
+    <button onmousedown="saudacao()">Clique em Mim</button>
+    <button ondblclick="mouseClicadoDuasVezes()">Clique em Mim 2 vezes</button>
+    <button onmouseup="saudacao()">Clique em Mim</button>
+    <button onmouseover="saudacaoLegal()">Passe o rato</button>
+
+
+        <script>
+        alert(`Título: ${document.getElementById("titulo").textContent}`)
+
+        //JavaScript é uma linguagem Case Sensitive
+        //por convenção utilizamos o padrão Camel Case
+        // - Maiúscula a apartir da segunda palavra
+        function saudacao(){
+            alert("Hello World")
+        }
+        function saudacaoLegal(){
+            alert("olá amigo")
+        }
+        function mouseClicadoDuasVezes(){
+            alert("pipipi popopo pupupu não sei oque, não sei oque la")
+        }
+    </script>
+</body>
+</html>
