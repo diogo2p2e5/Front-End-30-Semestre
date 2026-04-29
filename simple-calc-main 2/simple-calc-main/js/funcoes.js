@@ -148,7 +148,7 @@ async function buscarEquacao() {
             `<article class="data__card-result">
             <span><strong>Primeiro Número:</strong>${dadosRetornados[i].n1}</span>
             <span><strong>Segundo Número:</strong>${dadosRetornados[i].n2}</span>
-            <span><strong>Operação:</strong>${dadosRetornados[i].operacao}</span>
+            <span><strong>Operação:</strong>${dadosRetornados[i].op}</span>
             <span><strong>Resultado:</strong>${dadosRetornados[i].resultado}</span>
             </article>`;
 
