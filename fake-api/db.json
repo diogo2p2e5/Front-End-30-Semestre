@@ -48,8 +48,67 @@
       "id": "LUWHiGCwR2g"
     }
   ],
-
-  "cal" : [],
-  
+  "cal": [
+    {
+      "n1": 3,
+      "n2": 3,
+      "op": {
+        "0": {},
+        "1": {},
+        "2": {},
+        "3": {},
+        "4": {}
+      },
+      "resultado": null,
+      "id": "8sDVsV9BR2o"
+    },
+    {
+      "n1": 3,
+      "n2": 3,
+      "op": {
+        "0": {},
+        "1": {},
+        "2": {},
+        "3": {},
+        "4": {}
+      },
+      "resultado": null,
+      "id": "xm0fAaIofUo"
+    },
+    {
+      "n1": 3,
+      "n2": 3,
+      "op": {
+        "0": {},
+        "1": {},
+        "2": {},
+        "3": {},
+        "4": {}
+      },
+      "resultado": null,
+      "id": "VP5sLgxSiYM"
+    },
+    {
+      "n1": 2,
+      "n2": 2,
+      "op": "soma",
+      "resultado": null,
+      "id": "fG2m6JY7E_4"
+    },
+    {
+      "n1": 5,
+      "n2": 5,
+      "op": "soma",
+      "resultado": null,
+      "id": "FTSkqgzyJDo"
+    },
+    {
+      "n1": 2,
+      "n2": 2,
+      "op": "multiplicacao",
+      "resultado": "4.00",
+      "id": "w0UIjL_1QDg"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }
