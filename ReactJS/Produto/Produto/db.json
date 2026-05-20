@@ -1,0 +1,109 @@
+{
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "Notebook",
+      "preco": 5000,
+      "descricao": "Notebook Gamer.",
+      "quantidade": 10,
+      "imagem": ""
+    },
+    {
+      "nome": "Notebook Legal",
+      "preco": 500,
+      "descricao": "Notebook Gamer legal",
+      "quantidade": 100,
+      "imagem": "laptop-png.png",
+      "id": "2"
+    },
+    {
+      "id": "4",
+      "nome": "Notebook",
+      "preco": 5000,
+      "descricao": "Notebook Gamer.",
+      "quantidade": 10,
+      "imagem": ""
+    },
+    {
+      "id": "5",
+      "nome": "Notebook",
+      "preco": 5000,
+      "descricao": "Notebook Gamer.",
+      "quantidade": 10,
+      "imagem": ""
+    },
+    {
+      "id": "3",
+      "nome": "Notebook",
+      "preco": 5000,
+      "descricao": "Notebook Gamer.",
+      "quantidade": 10,
+      "imagem": ""
+    },
+    {
+      "nome": "roberto",
+      "preco": 12345,
+      "descricao": "Legal",
+      "quantidade": 13,
+      "imagem": "laptop-png.png",
+      "id": "OXsyTrYUvPc"
+    },
+    {
+      "nome": "roberto",
+      "preco": 2321,
+      "descricao": "Legal",
+      "quantidade": 13,
+      "imagem": "laptop-png.png",
+      "id": "Y9hrjT9VWaQ"
+    },
+    {
+      "nome": "marcio",
+      "preco": 123,
+      "descricao": "Legal",
+      "quantidade": 13,
+      "imagem": "laptop-png.png",
+      "id": "uT262aE3mks"
+    },
+    {
+      "nome": "marcio",
+      "preco": 123,
+      "descricao": "Legal",
+      "quantidade": 13,
+      "imagem": "laptop-png.png",
+      "id": "NrvDkkiuew8"
+    },
+    {
+      "nome": "marcio",
+      "preco": 432,
+      "descricao": "Legal",
+      "quantidade": 13,
+      "imagem": "laptop-png.png",
+      "id": "_IDNoB51-mM"
+    },
+    {
+      "nome": "pasldok",
+      "preco": 5123,
+      "descricao": "sfqe",
+      "quantidade": 13,
+      "imagem": "laptop-png.png",
+      "id": "gSIvE70tmGg"
+    },
+    {
+      "nome": "adsfasf",
+      "preco": 2511,
+      "descricao": "gwardfas",
+      "quantidade": 13,
+      "imagem": "laptop-png.png",
+      "id": "7jWpUy5zcbM"
+    },
+    {
+      "nome": "bdfgsadf",
+      "preco": 65214,
+      "descricao": "sdfasf ",
+      "quantidade": 13,
+      "imagem": "laptop-png.png",
+      "id": "-mb6BXwZW0Q"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
