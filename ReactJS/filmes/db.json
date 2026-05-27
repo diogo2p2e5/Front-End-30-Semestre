@@ -1,0 +1,29 @@
+{
+  "generos": [
+    {
+      "nome": "Thriller",
+      "id": "jRXmtBlq73I"
+    },
+    {
+      "nome": "Terror",
+      "id": "HAJ5v2bcBvM"
+    },
+    {
+      "nome": "Comédia",
+      "id": "bL9JMvnWcOY"
+    },
+    {
+      "nome": "Drama",
+      "id": "HUTWD9BHmQI"
+    },
+    {
+      "nome": "Ação",
+      "id": "EZJ2FQPe43Y"
+    },
+    {
+      "nome": "Slasher",
+      "id": "wPX1qAf0BTA"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
