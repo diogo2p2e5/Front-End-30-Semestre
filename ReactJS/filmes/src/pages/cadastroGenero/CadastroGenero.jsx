@@ -24,7 +24,7 @@ const CadastroGenero = () => {
     const getGeneros = async () => {
         //chama a api
         try {
-            const RetornoAPI = await api.get("/generos")
+            const RetornoAPI = await api.get("/Genero")
             setListaGeneros(RetornoAPI.data)//preencher o array listarGeneros
         } catch (error) {
             alert("Problemas ao carregar os dados da API")
@@ -53,7 +53,7 @@ const CadastroGenero = () => {
         }
 
         try {
-            await api.post('/generos', objCadastro);
+            await api.post('/Genero', objCadastro);
 
             Alerta({
                 title: 'Cadastro de Gênero',
@@ -105,7 +105,7 @@ const CadastroGenero = () => {
 
         
         try {
-            const RetornoAPI = await api.delete(`/generos/${item.id}`)
+            const RetornoAPI = await api.delete(`/Genero/${item.idGenero}`)
             if (RetornoAPI.status == 200 || RetornoAPI.status == 204) {
 
                 Alerta({
@@ -135,7 +135,7 @@ const CadastroGenero = () => {
     const preEditar = (item) => {
         setEditar(true)
         setNomeGenero(item.nome)
-        setId(item.id)
+        setId(item.idGenero)
     }
 
     const editarGenero = async (e) => {
@@ -156,7 +156,7 @@ const CadastroGenero = () => {
         }
 
         try {
-            const RetornoAPI = await api.put(`/generos/${id}`, objEditar);
+            const RetornoAPI = await api.put(`/Genero/${id}`, objEditar);
 
             Alerta({
                 title: 'Cadastro de Gênero',

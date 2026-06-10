@@ -9,11 +9,6 @@ const [arrfrutas, setArrFrutas] = useState([
     {id: 2, nome: "Melão", quantidade : 25}
 ])
 
-function cadastrar(e) {
-    e.preventDefault()
-    setArrFrutas([...arrfrutas,{id: Date.now(), nome : furta, quantidade: quantidade}])
-}
-
 
 
     return(

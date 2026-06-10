@@ -13,10 +13,6 @@
       "id": "bL9JMvnWcOY"
     },
     {
-      "nome": "Drama",
-      "id": "HUTWD9BHmQI"
-    },
-    {
       "nome": "Ação",
       "id": "EZJ2FQPe43Y"
     },
@@ -25,5 +21,7 @@
       "id": "wPX1qAf0BTA"
     }
   ],
+
+ 
   "$schema": "./node_modules/json-server/schema.json"
 }

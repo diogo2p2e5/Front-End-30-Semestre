@@ -1,0 +1,28 @@
+import { Children, useEffect, useState } from "react"
+import { UsuarioContext } from "./UsuarioContext"
+
+const UsuarioProvider = ({children}) => {
+    const [usuario, setUsuario] = useState(null)
+    // const [listausuario, setListaUsuario] = useState([])
+    
+
+
+    //ciclo de vida
+    useEffect(() => {
+        const usuarioStorage = JSON.stringify(localStorage.getItem("Usuario")) || ""
+        setUsuario(usuarioStorage)
+    },[])
+
+    return(
+        <UsuarioContext.Provider
+            value ={{
+                usuario, 
+                setUsuario
+            }}
+        >
+            {children}
+        </UsuarioContext.Provider>
+    )
+}
+
+export default UsuarioProvider

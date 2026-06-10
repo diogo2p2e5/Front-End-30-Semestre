@@ -1,7 +1,6 @@
 import "./Cadastro.css";
 import Botao from "../botao/Botao";
 
-
 // Destructuring nas props:
 // const Cadastro = ({ 
 //     cadastro, tituloCadastro, valor, setValor, estilo, 
@@ -10,8 +9,6 @@ import Botao from "../botao/Botao";
   
 
 const Cadastro = (props) => {
-
-
     return (
         <section className="section_cadastro">
             <form onSubmit={props.funcCadastro} className="layout_grid form_cadastro">
@@ -30,19 +27,24 @@ const Cadastro = (props) => {
                     <div className="campo_cad_genero" style={{ display: props.visibilidade }}>
                         <label htmlFor="genero">Gênero</label>
                         <select name="genero" id="">
-                            <option value="" disabled>Selecione</option>
-                            <option value="">op 1</option>
-                            <option value="">op 2</option>
-                            <option value="">op 3</option>
+                            <option value="">Selecione</option>
+                            {
+                                props.listaGeneros?.map((item) => {
+                                    return (
+                                        <option key={item.idGenero} value={item.idGenero}>{item.nome}</option>
+                                    )
+                                })
+                            }
                         </select>
                     </div>
 
+                    {/* mostrar/esconder botão Cancelar */}
                     {
                         props.btnEditar && 
                         <Botao 
-                        nomeDoBotao= "Cancelar" 
-                        btnEditar={props.btnEditar}
-                        cancelarEdicao={props.cancelarEdicao}
+                            nomeDoBotao="Cancelar" 
+                            btnEditar={props.btnEditar}
+                            cancelarEdicao={props.cancelarEdicao}
                         />
                     }
                     <Botao nomeDoBotao="Cadastrar" />

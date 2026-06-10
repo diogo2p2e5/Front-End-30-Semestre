@@ -1,0 +1,2 @@
+import CadastroProduto from "./CadastroProduto";
+
