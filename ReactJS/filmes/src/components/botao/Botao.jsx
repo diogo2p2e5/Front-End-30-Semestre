@@ -10,6 +10,10 @@ const Botao = (props) => {
             onClick={() => {
                 if (props.btnEditar) {
                     props.cancelarEdicao()
+                }else if (props.btnLogin) {
+                    props.fnLogin()
+                }else {
+                    null
                 }
             }}
         >
